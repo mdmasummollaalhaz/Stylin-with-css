@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)http://www.stylinwithcss.com/resources_css3_selectors.php -->
+<html style="" class="js flexbox flexboxlegacy no-touch rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent wf-myriadpro-n7-active wf-myriadpro-i4-active wf-myriadpro-n3-active wf-myriadpro-i3-active wf-myriadpro-n4-active wf-myriadpro-n6-active wf-runda-n4-active wf-runda-i4-active wf-runda-n5-active wf-runda-i5-active wf-runda-n7-active wf-runda-n3-active wf-runda-i3-active wf-active gr__stylinwithcss_com"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link href="./CSS3 Selectors Reference _ Learn CSS _ jQuery _ PHP _ Tutorials _ Books_files/css" rel="stylesheet" type="text/css">
+
+
+
+
+<title>
+CSS3 Selectors Reference | Learn CSS | jQuery | PHP | Tutorials | Books</title>
+<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1" maximum-scale="1.0"> <!-- stops iPhone scaling -->
+
+<link type="text/css" href="./CSS3 Selectors Reference _ Learn CSS _ jQuery _ PHP _ Tutorials _ Books_files/menu.css" rel="stylesheet">
+<link type="text/css" href="./CSS3 Selectors Reference _ Learn CSS _ jQuery _ PHP _ Tutorials _ Books_files/signin_form.css" rel="stylesheet">
+<link type="text/css" href="./CSS3 Selectors Reference _ Learn CSS _ jQuery _ PHP _ Tutorials _ Books_files/search.css" rel="stylesheet">
+<link type="text/css" href="./CSS3 Selectors Reference _ Learn CSS _ jQuery _ PHP _ Tutorials _ Books_files/styles.css" rel="stylesheet">
+<link type="text/css" href="./CSS3 Selectors Reference _ Learn CSS _ jQuery _ PHP _ Tutorials _ Books_files/stylin_form_20120828.css" rel="stylesheet">
+
+
+<script type="text/javascript" async="" src="./CSS3 Selectors Reference _ Learn CSS _ jQuery _ PHP _ Tutorials _ Books_files/ga.js.download"></script><script src="./CSS3 Selectors Reference _ Learn CSS _ jQuery _ PHP _ Tutorials _ Books_files/jquery-1.11.2.min.js.download"></script>
+<script src="./CSS3 Selectors Reference _ Learn CSS _ jQuery _ PHP _ Tutorials _ Books_files/less.min.js.download"></script>
+<script src="./CSS3 Selectors Reference _ Learn CSS _ jQuery _ PHP _ Tutorials _ Books_files/modernizr.css3_touch_html5shiv.20120920.js.download"></script>
+<script src="./CSS3 Selectors Reference _ Learn CSS _ jQuery _ PHP _ Tutorials _ Books_files/cssfx.min.js.download"></script>
+
+<script type="text/javascript" src="./CSS3 Selectors Reference _ Learn CSS _ jQuery _ PHP _ Tutorials _ Books_files/vwb1kav.js.download"></script>
+<style type="text/css">.tk-myriad-pro{font-family:"myriad-pro",helvetica,arial,sans-serif;}.tk-runda{font-family:"runda",sans-serif;}</style><style type="text/css">@font-face{font-family:myriad-pro;src:url(https://use.typekit.net/af/1b1b1e/00000000000000000001709e/27/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/1b1b1e/00000000000000000001709e/27/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/1b1b1e/00000000000000000001709e/27/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:myriad-pro;src:url(https://use.typekit.net/af/d32e26/00000000000000000001709b/27/l?subset_id=2&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/d32e26/00000000000000000001709b/27/d?subset_id=2&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/d32e26/00000000000000000001709b/27/a?subset_id=2&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;}@font-face{font-family:myriad-pro;src:url(https://use.typekit.net/af/c630c3/000000000000000000017098/27/l?subset_id=2&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/c630c3/000000000000000000017098/27/d?subset_id=2&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/c630c3/000000000000000000017098/27/a?subset_id=2&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;}@font-face{font-family:myriad-pro;src:url(https://use.typekit.net/af/ee605b/000000000000000000017099/27/l?subset_id=2&fvd=i3&v=3) format("woff2"),url(https://use.typekit.net/af/ee605b/000000000000000000017099/27/d?subset_id=2&fvd=i3&v=3) format("woff"),url(https://use.typekit.net/af/ee605b/000000000000000000017099/27/a?subset_id=2&fvd=i3&v=3) format("opentype");font-weight:300;font-style:italic;}@font-face{font-family:myriad-pro;src:url(https://use.typekit.net/af/cafa63/00000000000000000001709a/27/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/cafa63/00000000000000000001709a/27/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/cafa63/00000000000000000001709a/27/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:myriad-pro;src:url(https://use.typekit.net/af/80c5d0/00000000000000000001709c/27/l?subset_id=2&fvd=n6&v=3) format("woff2"),url(https://use.typekit.net/af/80c5d0/00000000000000000001709c/27/d?subset_id=2&fvd=n6&v=3) format("woff"),url(https://use.typekit.net/af/80c5d0/00000000000000000001709c/27/a?subset_id=2&fvd=n6&v=3) format("opentype");font-weight:600;font-style:normal;}@font-face{font-family:runda;src:url(https://use.typekit.net/af/b2d6fb/000000000000000000012ced/27/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/b2d6fb/000000000000000000012ced/27/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/b2d6fb/000000000000000000012ced/27/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:runda;src:url(https://use.typekit.net/af/89bcaa/000000000000000000012cee/27/l?subset_id=2&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/89bcaa/000000000000000000012cee/27/d?subset_id=2&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/89bcaa/000000000000000000012cee/27/a?subset_id=2&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;}@font-face{font-family:runda;src:url(https://use.typekit.net/af/6a91a4/000000000000000000012cef/27/l?subset_id=2&fvd=n5&v=3) format("woff2"),url(https://use.typekit.net/af/6a91a4/000000000000000000012cef/27/d?subset_id=2&fvd=n5&v=3) format("woff"),url(https://use.typekit.net/af/6a91a4/000000000000000000012cef/27/a?subset_id=2&fvd=n5&v=3) format("opentype");font-weight:500;font-style:normal;}@font-face{font-family:runda;src:url(https://use.typekit.net/af/9ed401/000000000000000000012cf0/27/l?subset_id=2&fvd=i5&v=3) format("woff2"),url(https://use.typekit.net/af/9ed401/000000000000000000012cf0/27/d?subset_id=2&fvd=i5&v=3) format("woff"),url(https://use.typekit.net/af/9ed401/000000000000000000012cf0/27/a?subset_id=2&fvd=i5&v=3) format("opentype");font-weight:500;font-style:italic;}@font-face{font-family:runda;src:url(https://use.typekit.net/af/64be33/000000000000000000012cf1/27/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/64be33/000000000000000000012cf1/27/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/64be33/000000000000000000012cf1/27/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:runda;src:url(https://use.typekit.net/af/c07f39/000000000000000000012ceb/27/l?subset_id=2&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/c07f39/000000000000000000012ceb/27/d?subset_id=2&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/c07f39/000000000000000000012ceb/27/a?subset_id=2&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;}@font-face{font-family:runda;src:url(https://use.typekit.net/af/889a6a/000000000000000000012cec/27/l?subset_id=2&fvd=i3&v=3) format("woff2"),url(https://use.typekit.net/af/889a6a/000000000000000000012cec/27/d?subset_id=2&fvd=i3&v=3) format("woff"),url(https://use.typekit.net/af/889a6a/000000000000000000012cec/27/a?subset_id=2&fvd=i3&v=3) format("opentype");font-weight:300;font-style:italic;}</style><script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+<!--script src=" http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script -->
+
+<script>
+// removes current page link from sidebar links - ul (or an ancestor) of sidebar links must have sidebar_links class
+
+// sidebar nav link management - hides current page link
+$(document).ready(function() {
+	
+	// sidebar nav link management - hides current page link
+	vPageName = 'resources_css3_selectors.php'; // the name of the current page file - see top of this file 
+	//alert (vPageName);
+	$('.sidebar_links li a').each(function(index) {
+		var thisLink = $(this).attr('href'); // the URL of the current link in the each loop
+		if (thisLink == vPageName) {
+			$(this).parent().hide(); // then hide the li containing the link - we are already on this page
+			//alert (thisLink);
+			//note: this.href returns full URL
+			// note: this.attr.href does nothing
+		}
+	});
+	
+	// generic part of title tag for every page
+	// var genericTitle = " | Learn CSS | CSS3 | PHP | JavaScript | Books | Tutorials | Free Code";
+	// grab the title from the hidden field placed in each non-Perch managed page
+	///var thisPageTitle = $('input[id=page_title]').attr('name');
+	//generic fallback text if no hidden field added to page
+	///if (!(thisPageTitle)) { thisPageTitle = "Stylin' with CSS Web site"; }
+	//assemble the specific and generic titles
+	///var fullTitle = thisPageTitle + genericTitle;
+	// write into title tag
+	///$('title').text(fullTitle);
+});
+</script>
+<script>
+
+/*20_cws */
+/* iPhone rotate redraw/scale bug fix */
+
+(function(doc) {
+
+	var addEvent = 'addEventListener',
+	    type = 'gesturestart',
+	    qsa = 'querySelectorAll',
+	    scales = [1, 1],
+	    meta = qsa in doc ? doc[qsa]('meta[name=viewport]') : [];
+
+	function fix() {
+		meta.content = 'width=device-width,minimum-scale=' + scales[0] + ',maximum-scale=' + scales[1];
+		doc.removeEventListener(type, fix, true);
+	}
+
+	if ((meta = meta[meta.length - 1]) && addEvent in doc) {
+		fix();
+		scales = [.25, 1.6];
+		doc[addEvent](type, fix, true);
+	}
+
+}(document)); 
+
+</script>
+
+<script async="" src="./CSS3 Selectors Reference _ Learn CSS _ jQuery _ PHP _ Tutorials _ Books_files/hotjar-126171.js.download"></script><script async="" src="./CSS3 Selectors Reference _ Learn CSS _ jQuery _ PHP _ Tutorials _ Books_files/modules.160e8b42db3a4625ff3e.js.download"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style></head>
+
+<body ontouchstart="" data-gr-c-s-loaded="true">
+	<div id="wrapper"> 		<header>
+       		<a href="http://www.stylinwithcss.com/index.php" title="Go to Home Page">
+            <section id="title">
+            	<h1>Stylin’ with CSS</h1>
+        		<h2>The Blog and Books of Charles Wyke-Smith</h2>
+        	</section>
+            </a>
+            <nav class="menu">
+                 <ul>
+                 	<li class="choice1"><a href="http://www.stylinwithcss.com/blog/index.php">Articles</a></li>
+                    <li class="choice2"><a href="http://www.stylinwithcss.com/books.php">Books</a>
+                    	<ul><!-- drop down menu items -->
+                            <li><a href="http://www.stylinwithcss.com/stylin.php">Stylin’ with CSS</a></li>
+                            <li><a href="http://www.stylinwithcss.com/visual_stylin.php">Visual Stylin’ with CSS3</a></li>
+                            <li><a href="http://www.stylinwithcss.com/scriptin.php">Scriptin’ with JavaScript and Ajax</a></li>
+                            <li><a href="http://www.stylinwithcss.com/codin.php">Codin’ for the Web</a></li>
+                         </ul>	
+                      </li>
+                   <li class="choice3"><a href="http://www.stylinwithcss.com/resources.php">Resources</a>
+                         <ul><!-- drop down menu items -->
+                            <li><a href="http://www.stylinwithcss.com/resources_css_selectors.php">CSS Selectors</a></li>
+                            <li><a href="http://www.stylinwithcss.com/resources_css3_selectors.php">CSS3 Selectors</a></li>
+                            <li><a href="http://www.stylinwithcss.com/resources_css_properties.php">CSS Properties</a></li>
+                            <li><a href="http://www.stylinwithcss.com/resources_html_elements.php">HTML and HTML5 Elements</a></li>
+                         </ul>
+                      </li>
+                    <li class="choice4"><a href="http://www.stylinwithcss.com/bookshelf.php">Bookshelf</a></li>
+                    <li class="choice5"><a href="http://www.stylinwithcss.com/contact_me">Contact Me</a></li>
+                 </ul>
+            </nav> 
+            <form class="search" action="http://www.stylinwithcss.com/search.php" method="post"> 
+        		<label for="user_name">search</label> <!-- the for attribute ties the label to its control - same as contol's ID -->
+        		<input type="text" id="search" name="search" placeholder="search"> 
+       	 	</form>
+        </header>
+       <section id="feature_area">
+       		<article id="book_description">
+            	<div class="inner">
+                <h3>CSS3 Selectors Reference List</h3>
+                 <div class="copy">
+                 	<table class="resource_table">
+                        <caption>Animation</caption>
+                            <thead>
+                                <tr>
+                                    <th>Property</th>
+                                    <th>Description</th>
+                                    <th>Values</th>
+                                </tr>
+                            </thead>
+                                <tbody><tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_@keyframes.cfm">@keyframes</a></code></td>
+                                    <td>Allows you to create animations using CSS</td>
+                                    <td><span><em>name</em></span><span><em>keyframe selector</em></span><span><em>keyframe declaration</em></span></td>
+                                </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_animation.cfm">animation</a></code></td>
+                                    <td>A shorthand property for setting multiple animation properties in one declaration</td>
+                                    <td><span>name</span><span>duration</span><span>timing_function</span><span>delay</span><span>iteration_count</span><span>direction</span></td>
+                                </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_animation-delay.cfm">animation-delay</a></code></td>
+                                    <td>Allows you to specify how long the animation should wait until it starts playing</td>
+                                    <td><span><em>time</em></span></td>
+                                </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_animation-direction.cfm">animation-direction</a></code></td>
+                                    <td>Allows you to specify which direction an animation will be played in</td>
+                                    <td><span>normal</span><span>reverse</span><span>alternate</span><span>alternate-reverse</span></td>
+                                </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_animation-duration.cfm">animation-duration</a></code></td>
+                                    <td>Allows you to specify how long your animation will take to complete one cycle</td>
+                                    <td><span><em>time</em></span></td>
+                                </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_animation-fill-mode.cfm">animation-fill-mode</a></code></td>
+                                    <td>Allows you to define what values are applied by the animation outside the time it is executing</td>
+                                    <td><span>none</span><span>forwards</span><span>backwards</span><span>both</span></td>
+                                </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_animation-iteration-count.cfm">animation-iteration-count</a></code></td>
+                                    <td>Allows you to specify how many iterations - or cycles - the animation will play</td>
+                                    <td><span>infinite</span><span><em>number</em></span></td>
+                                </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_animation-name.cfm">animation-name</a></code></td>
+                                    <td>Allows you to specify a name for your animation</td>
+                                    <td><span>name</span></td>
+                                </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_animation-play-state.cfm">animation-play-state</a></code></td>
+                                    <td>Allows you to specify whether an animation is running or paused</td>
+                                    <td><span>running</span><span>paused</span></td>
+                                </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_animation-timing-function.cfm">animation-timing-function</a></code></td>
+                                    <td>Allows you to specify how an animation will progress over one cycle of its duration</td>
+                                    <td><span>ease</span><span>linear</span><span>ease-in</span><span>ease-out</span><span>ease-in-out</span><span>cubic-bezier</span><span>step-start</span><span>step-end</span><span>steps</span></td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a target="_blank" href="http://www.stylinwithcss.com/resources_css3_selectors.php#">Back to Top</a></td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                        </tbody></table>
+                        
+                        <table class="resource_table">
+                        <caption>Background</caption>
+                            <thead>
+                                <tr>
+                                    <th>Property</th>
+                                    <th>Description</th>
+                                    <th>Values</th>
+                                </tr>
+                            </thead>
+                                <tbody><tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_background-clip.cfm">background-clip</a></code></td>
+                                    <td>Sets the clipping behavior for the background of an element</td>
+                                    <td><span>border-box</span><span>padding-box</span><span>content-box</span></td>
+                                </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_background-origin.cfm">background-origin</a></code></td>
+                                    <td>Sets the background positioning area of an element</td>
+                                    <td><span>border-box</span><span>padding-box</span><span>content-box</span></td>
+                                </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_background-size.cfm">background-size</a></code></td>
+                                    <td>Sets the dimensions of a background image</td>
+                                    <td><span>contain</span><span>cover</span><span><em>length</em></span><span><em>percentage</em></span><span>auto</span></td>
+                                </tr>
+                        
+                                <tr>
+                                    <td><a target="_blank" href="http://www.stylinwithcss.com/resources_css3_selectors.php#">Back to Top</a></td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                        </tbody></table>
+                        
+                        <table class="resource_table">
+                        <caption>Border Images</caption>
+                            <thead>
+                                <tr>
+                                    <th>Property</th>
+                                    <th>Description</th>
+                                    <th>Values</th>
+                                </tr>
+                            </thead>
+                                <tbody><tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_border-image.cfm">border-image</a></code></td>
+                                    <td>A shorthand property for setting multiple border-image related properties in one declaration</td>
+                                    <td><span>background-color</span><span>background-image</span><span>background-repeat</span><span>background-attachment</span><span>background-position</span></td>
+                                </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_border-image-outset.cfm">border-image-outset</a></code></td>
+                                    <td>Used for defining how much a border image area extends beyond the border box</td>
+                                    <td><span>scroll</span><span>fixed</span></td>
+                                </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_border-image-repeat.cfm">border-image-repeat</a></code></td>
+                                    <td>Used for defining how the images for the middle part and sides of the border are scaled and tiled</td>
+                                    <td><span>stretch</span><span>repeat</span><span>round</span><span>space</span></td>
+                                </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_border-image-source.cfm">border-image-source</a></code></td>
+                                    <td>Used for specifying an image location to be used as a border</td>
+                                    <td><span>none</span><span>image</span></td>
+                                </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_border-image-slice.cfm">border-image-slice</a></code></td>
+                                    <td>Used for specifying inward offsets from the top, right, bottom, and left edges of the image, dividing it into nine regions: four corners, four edges and a middle</td>
+                                    <td><span>number</span><span>percentage</span><span>fill</span></td>
+                                </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_border-image-width.cfm">border-image-width</a></code></td>
+                                    <td>Used for specifying offsets that are used to divide the border image area into nine parts (i.e. four corners, four edges and a middle)</td>
+                                    <td><span>number</span><span>percentage</span><span>fill</span></td>
+                                </tr>
+                                <tr>
+                                    <td><a target="_blank" href="http://www.stylinwithcss.com/resources_css3_selectors.php#">Back to Top</a></td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                        </tbody></table>
+                        
+                        <table class="resource_table">
+                        <caption>Border Radius</caption>
+                            <thead>
+                                <tr>
+                                    <th>Property</th>
+                                    <th>Description</th>
+                                    <th>Values</th>
+                                </tr>
+                            </thead>
+                                <tbody><tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_border-radius.cfm">border-radius</a></code></td>
+                                    <td>A shorthand property for setting multiple border-radius related properties in one declaration</td>
+                                    <td><span>length</span><span>percentage</span></td>
+                                </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_border-top-left-radius.cfm">border-top-left-radius</a></code></td>
+                                    <td>Sets the border radius on the top-left corner</td>
+                                    <td><span>length</span><span>percentage</span></td>
+                                </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_border-top-right-radius.cfm">border-top-right-radius</a></code></td>
+                                    <td>Sets the border radius on the top-right corner</td>
+                                    <td><span>length</span><span>percentage</span></td>
+                                </tr>
+                                <tr>
+                                <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_border-bottom-left-radius.cfm">border-bottom-left-radius</a></code></td>
+                                    <td>Sets the border radius on the bottom-left corner</td>
+                                    <td><span>length</span><span>percentage</span></td>
+                                </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_border-bottom-right-radius.cfm">border-bottom-right-radius</a></code></td>
+                                    <td>Sets the border radius on the bottom-right corner</td>
+                                    <td><span>length</span><span>percentage</span></td>
+                                </tr>
+                        
+                                <tr>
+                                    <td><a target="_blank" href="http://www.stylinwithcss.com/resources_css3_selectors.php#">Back to Top</a></td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                        </tbody></table>
+                        
+                        <table class="resource_table">
+                        <caption>Marquee</caption>
+                            <thead>
+                                <tr>
+                                    <th>Property</th>
+                                    <th>Description</th>
+                                    <th>Values</th>
+                                </tr>
+                            </thead>
+                                <tbody><tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_marquee-direction.cfm">marquee-direction</a></code></td>
+                                    <td>Used for specifying the direction of a marquee</td>
+                                    <td><span>forward</span><span>reverse</span></td>
+                                </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_marquee-play-count.cfm">marquee-play-count</a></code></td>
+                                    <td>Used for specifying the number of iterations - or loops - that a marquee performs before it stops playing</td>
+                                    <td><span><em>non-negative integer'</em></span><em><span>infinite</span></em></td>
+                                </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_marquee-speed.cfm">marquee-speed</a></code></td>
+                                    <td>Used for specifying the speed of a marquee</td>
+                                    <td><span>slow</span><span>normal</span><span>fast</span></td>
+                                </tr>
+                                <tr>
+                                <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_marquee-style.cfm">marquee-style</a></code></td>
+                                    <td>Used for specifying the style - or behavior - of a marquee</td>
+                                    <td><span>scroll</span><span>slide</span><span>alternate</span></td>
+                                </tr>
+                        
+                                <tr>
+                                    <td><a target="_blank" href="http://www.stylinwithcss.com/resources_css3_selectors.php#">Back to Top</a></td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                        </tbody></table>
+                        
+                        <table class="resource_table">
+                        <caption>Miscellaneous</caption>
+                            <thead>
+                                <tr>
+                                    <th>Property</th>
+                                    <th>Description</th>
+                                    <th>Values</th>
+                                </tr>
+                            </thead>
+                                <tbody><tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_box-decoration-break.cfm">box-decoration-break</a></code></td>
+                                    <td>Allows developers to specify what happens to an element when it is broken due to a page break or column break, or for inline elements, a line break</td>
+                                    <td><span>slice</span><span>clone</span></td>
+                                </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_box-shadow.cfm">box-shadow</a></code></td>
+                                    <td>Used for attaching one or more drop shadows to an HTML element</td>
+                                    <td><span>none</span><span><em>horizontal_offset</em></span><span><em>vertical_offset</em></span><span><em>blur</em></span><span><em>spread_distance</em></span><span><em>color</em></span><span>inset</span></td>
+                                </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_opacity.cfm">opacity</a></code></td>
+                                    <td>Allows you to specify a level of opacity against an object so that it becomes semi-transparent, or even fully transparent</td>
+                                    <td><span>inherit</span><span><em>alphavalue</em></span></td>
+                                </tr>
+                        
+                                <tr>
+                                    <td><a target="_blank" href="http://www.stylinwithcss.com/resources_css3_selectors.php#">Back to Top</a></td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                        </tbody></table>
+                        
+                        
+                        <table class="resource_table">
+                        <caption>Multi-Column</caption>
+                            <thead>
+                                <tr>
+                                    <th>Property</th>
+                                    <th>Description</th>
+                                    <th>Values</th>
+                                </tr>
+                            </thead>
+                                <tbody><tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_break-after.cfm">break-after</a></code></td>
+                                    <td>Allows you to force a break after an element</td>
+                                    <td><span>auto</span><span>always</span><span>avoid</span><span>left</span><span>right</span><span>page</span><span>column</span><span>avoid-page</span><span>avoid-column</span></td>
+                                </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_break-before.cfm">break-before</a></code></td>
+                                    <td>Allows you to force a break before an element</td>
+                                    <td><span>auto</span><span>always</span><span>avoid</span><span>left</span><span>right</span><span>page</span><span>column</span><span>avoid-page</span><span>avoid-column</span></td>        </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_break-inside.cfm">break-inside</a></code></td>
+                                    <td>Allows you to prevent an unwanted break within a multi-column layout</td>
+                                    <td><span>auto</span><span>avoid</span><span>avoid-page</span><span>avoid-column</span></td>        </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_columns.cfm">columns</a></code></td>
+                                    <td>A shorthand property for setting multiple column related properties in one declaration</td>
+                                    <td><span><em>column-width</em></span><span><em>column-count</em></span></td>
+                                </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_column-count.cfm">column-count</a></code></td>
+                                    <td>Allows you to specify the number of columns in your multi-column layout</td>
+                                    <td><span><em>number</em></span><span>auto</span></td>
+                                 </tr>
+                                 <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_column-fill.cfm">column-fill</a></code></td>
+                                    <td>Allows you to balance content equally between columns on a multi-column layout</td>
+                                    <td><span>auto</span><span>balance</span></td>
+                                </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_column-gap.cfm">column-gap</a></code></td>
+                                    <td>Allows you to specify the size of the gap between columns in your multi-column layout</td>
+                                    <td><span><em>length</em></span><span>normal</span></td>
+                                </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_column-rule.cfm">column-rule</a></code></td>
+                                    <td>A shorthand property for setting multiple column rule related properties in one declaration</td>
+                                    <td><span><em>column-rule-width</em></span><span><em>column-rule-style</em></span><span><em>column-rule-color</em></span></td>
+                                </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_column-rule-color.cfm">column-rule-color</a></code></td>
+                                    <td>Allows you to set the color of the column rule between columns on a multi-column layout</td>
+                                    <td><span><em>color</em></span></td>
+                                </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_column-rule-style.cfm">column-rule-style</a></code></td>
+                                    <td>Allows you to set the style of the column rule between columns on a multi-column layout</td>
+                                    <td><span>none</span><span>hidden</span><span>dotted</span><span>dashed</span><span>solid</span><span>double</span><span>groove</span><span>ridge</span><span>inset</span><span>outset</span></td>
+                                </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_column-rule-width.cfm">column-rule-width</a></code></td>
+                                    <td>Allows you to set the width of the column rule between columns on a multi-column layout</td>
+                                    <td><span>thin</span><span>medium</span><span>thick</span><span><em>explicit width</em></span></td>
+                                </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_column-width.cfm">column-width</a></code></td>
+                                    <td>Allows content to span across multiple columns on a multi-column layout</td>
+                                    <td><span>none</span><span>all</span></td>
+                                </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_column-span.cfm">column-span</a></code></td>
+                                    <td>Allows you to specify the width of the columns in multi-column layouts</td>
+                                    <td><span>auto</span><span><em>fixed length</em></span></td>
+                                </tr>
+                        
+                                <tr>
+                                    <td><a target="_blank" href="http://www.stylinwithcss.com/resources_css3_selectors.php#">Back to Top</a></td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                        </tbody></table>
+                        
+                        <table class="resource_table">
+                        <caption>Overflow</caption>
+                            <thead>
+                                <tr>
+                                    <th>Property</th>
+                                    <th>Description</th>
+                                    <th>Values</th>
+                                </tr>
+                            </thead>
+                                <tbody><tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_overflow.cfm">Overflow</a></code></td>
+                                    <td>A shorthand property for setting the overflow-x and overflow-y properties in one declaration</td>
+                                    <td><span>visible</span><span>hidden</span><span>scroll</span><span>auto</span><span>no-display</span><span>no-content</span></td>
+                                </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_overflow-x.cfm">overflow-x</a></code></td>
+                                    <td>Sets the clipping behavior for the right and left edges of an element</td>
+                                    <td><span>visible</span><span>hidden</span><span>scroll</span><span>auto</span><span>no-display</span><span>no-content</span></td>
+                                </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_overflow-y.cfm">overflow-y</a></code></td>
+                                    <td>Sets the clipping behavior for the top and bottom edges of an element</td>
+                                    <td><span>visible</span><span>hidden</span><span>scroll</span><span>auto</span><span>no-display</span><span>no-content</span></td>
+                                </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_overflow-style.cfm">overflow-style</a></code></td>
+                                    <td>Used for specifying the scrolling method/s for elements that overflow</td>
+                                    <td><span>auto</span><span>marquee-line</span><span>marquee-block</span></td>
+                                </tr>
+                        
+                                <tr>
+                                    <td><a target="_blank" href="http://www.stylinwithcss.com/resources_css3_selectors.php#">Back to Top</a></td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                        </tbody></table>
+                        
+                        <table class="resource_table">
+                        <caption>Transform</caption>
+                            <thead>
+                                <tr>
+                                    <th>Property</th>
+                                    <th>Description</th>
+                                    <th>Values</th>
+                                </tr>
+                            </thead>
+                                <tbody><tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_backface-visibility.cfm">backface-visibility</a></code></td>
+                                    <td>Sets whether the back of the element is visible when it has been rotated and its back is facing the user</td>
+                                    <td><span>visible</span><span>hidden</span></td>
+                                </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_perspective.cfm">perspective</a></code></td>
+                                    <td>Used to adjust the position of a 3D element in relation to the user in order to provide a 3D perspective</td>
+                                    <td><span>none</span><span><em>length</em></span></td>
+                                </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_perspective-origin.cfm">perspective-origin</a></code></td>
+                                    <td>Used to determine the vanishing point for a 3D effect</td>
+                                    <td><span><strong>For x-position</strong></span><span><em>percentage</em></span><span><em>length</em></span><span>left</span><span>right</span><span>center</span><span><strong>For y-position</strong></span><span><em>percentage</em></span><span><em>length</em></span><span>top</span><span>bottom</span><span>center</span></td>
+                                </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_transform.cfm">transform</a></code></td>
+                                    <td>Used to transform an element in two-dimensional or three-dimensional space</td>
+                                    <td><span>matrix (<em>number number number number number number</em>)</span><span>translate (<em>translation-value translation-value</em>)</span><span>translateX (<em>translation-value</em>)</span><span>translateY (<em>translation-value</em>)</span><span>scale (<em>number number</em>)</span><span>scaleX (<em>number</em>)</span><span>scaleY (<em>number</em>)</span><span>rotate (<em>angle</em>)</span><span>skewX (<em>angle</em>)</span><span>skewY (<em>angle</em>)</span></td>
+                                </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_transform-origin.cfm">transform-origin</a></code></td>
+                                    <td>Allows you to define the origin for the transformation of an element</td>
+                                    <td><span><strong>For x-axis</strong></span><span><em>percentage</em></span><span><em>length</em></span><span>left</span><span>right</span><span>center</span><span><strong>For y-axis</strong></span><span><em>percentage</em></span><span><em>length</em></span><span>top</span><span>bottom</span><span><strong>For z-axis</strong></span><span><em>length</em></span></td>
+                                </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_transform-style.cfm">transform-style</a></code></td>
+                                    <td>Used to determine whether child elements (of a 3D element) should be 3D or flat.</td>
+                                    <td><span>preserve-3d</span><span>flat</span></td>
+                                </tr>
+                        
+                                <tr>
+                                    <td><a target="_blank" href="http://www.stylinwithcss.com/resources_css3_selectors.php#">Back to Top</a></td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                        </tbody></table>
+                        
+                        <table class="resource_table">
+                        <caption>Transition</caption>
+                            <thead>
+                                <tr>
+                                    <th>Property</th>
+                                    <th>Description</th>
+                                    <th>Values</th>
+                                </tr>
+                            </thead>
+                                <tbody><tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_transition.cfm">transition</a></code></td>
+                                    <td>A shorthand property for setting the four transition properties in one declaration</td>
+                                    <td><span><em>transition-property</em></span><span><em>transition-duration</em></span><span><em>transition-timing-function</em></span><span><em>transition-delay</em></span></td>
+                                </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_transition-delay.cfm">transition-delay</a></code></td>
+                                    <td>Allows you to specify how long the transition should wait until it starts</td>
+                                    <td><span><em>time</em></span></td>
+                                </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_transition-duration.cfm">transition-duration</a></code></td>
+                                    <td>Allows you to specify how long your transition will take to complete</td>
+                                    <td><span><em>time</em></span></td>
+                                </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_transition-timing-function.cfm">transition-timing-function</a></code></td>
+                                    <td>Allows you to specify how a transition will change speed throughout its duration</td>
+                                    <td><span>ease</span><span>linear</span><span>ease-in</span><span>ease-out</span><span>ease-in-out</span><span>cubic-bezier</span></td>
+                        
+                                </tr>
+                                <tr>
+                                    <td><code><a target="_blank" href="http://www.quackit.com/css/css3/properties/css_transition-property.cfm">transition-property</a></code></td>
+                                    <td>Allows you to specify which properties will have the transition applied to them</td>
+                                    <td><span>none</span><span>all</span><span><em>IDENT</em></span></td>
+                                </tr>
+                                <tr>
+                                    <td><a target="_blank" href="http://www.stylinwithcss.com/resources_css3_selectors.php#">Back to Top</a></td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                        </tbody></table>
+
+                 </div>
+                </div>
+            </article>
+            
+       		<aside>
+       						<section>
+                <nav>
+        			<ul class="sidebar_links">
+                        <li><a href="http://www.stylinwithcss.com/resources.php">Resources Links</a></li>
+                        <li><a href="http://www.stylinwithcss.com/resources_css_selectors.php">CSS Selectors Reference List</a></li>
+                        <li style="display: none;"><a href="http://www.stylinwithcss.com/resources_css3_selectors.php">CSS3 Selectors Reference List</a></li>
+                        <li><a href="http://www.stylinwithcss.com/resources_css_properties.php">CSS Properties Reference List</a></li>
+                        <li><a href="http://www.stylinwithcss.com/resources_html_elements.php">HTML and HTML5 Elements Reference List</a></li>
+                    </ul>
+                </nav>
+                </section>
+                            </aside>
+       		
+       </section>
+        
+                
+        <footer>
+            <nav>
+            	<ul>
+                	<li><a href="http://www.stylinwithcss.com/index.php">Home</a></li>
+                    <li><a href="http://www.stylinwithcss.com/blog/index.php">Articles</a></li>
+                    <li><a href="http://www.stylinwithcss.com/books.php">Books</a></li>
+                    <li><a href="http://www.stylinwithcss.com/resources.php">Resources</a></li>
+                    <li><a href="http://www.stylinwithcss.com/bookshelf.php">Bookshelf</a></li>
+                	<li><a href="http://www.stylinwithcss.com/downloads.php">Code Downloads</a></li>
+                	<li><a href="http://www.stylinwithcss.com/contact_me.php">Contact Me</a></li>
+                    <li><a href="http://www.stylinwithcss.com/privacy.php">Privacy Policy</a></li>
+           	 	</ul>
+                    <p>© 2013-2016 Charles Wyke-Smith.&nbsp;&nbsp;All rights reserved.</p>
+           	</nav>
+    </footer>
+   </div><!-- end wrapper -->
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-35470318-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+<!-- Hotjar Tracking Code for http://www.stylinwithcss.com -->
+
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:126171,hjsv:5};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+
+
+</script>        
+    
+  <div id="ads"></div><iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="./CSS3 Selectors Reference _ Learn CSS _ jQuery _ PHP _ Tutorials _ Books_files/box-d743cafc9d1fb7eed204caa92025802f.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe><script type="text/javascript" async="" src="./CSS3 Selectors Reference _ Learn CSS _ jQuery _ PHP _ Tutorials _ Books_files/20ba4519da0cfb915b.js(1).download"></script></body><div><div class="gr_-editor gr-iframe-first-load" style="display: none;"><div class="gr_-editor_back"></div><iframe class="gr_-ifr gr-_dialog-content" src="./CSS3 Selectors Reference _ Learn CSS _ jQuery _ PHP _ Tutorials _ Books_files/saved_resource.html"></iframe></div></div><grammarly-card><div></div></grammarly-card><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>

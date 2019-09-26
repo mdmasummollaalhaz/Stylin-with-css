@@ -1,0 +1,960 @@
+@charset "UTF-8";
+/* CSS Document */
+/* typekit - 
+Myriad Pro - light:300, regular:400, semi-bold:600, bold:800
+Runda -      light:300, regular:400, medium:500, bold:700, black:900
+*/
+
+* {margin:0; padding:0;}
+#form1_banana {display:none} /* this is the honeypot antispam field in templates/blog/comment_form.html */ 
+body {
+	font-family: "myriad-pro", helvetica, sans-serif;
+	background:#efefef; margin:0 0;
+	}
+#wrapper {
+	width:980px; margin:0 auto 20px;
+	}
+header {
+	position:relative; /* positioning context for title and search areas */
+	height:70px; /* fixed height to enclose absolutely positioned elements */	
+	margin:10px 0;  /* vertical space around header */
+	border-radius:20px 0px 20px 0px; /* order: tl, tr, br, bl */
+	box-shadow:0 12px 8px -9px #555; /* negative spread brings shadow inside box width */
+	background:#fff;
+	padding-top:1px; /* prevents menu's top margin collapsing */	
+	z-index:20; /* ensures menus overlay all content in feature area */
+	}
+header section#title {
+	position:absolute;
+	width:300px; /* wide enough to not force text wrap */
+	height:65px; /* tall enough  for both lines of text */
+	left:0px; /* top left corner positioning */
+	top:0px;
+	/* border:1px solid red; */ /* temp for screenshots */
+	}
+header a {text-decoration:none;} /* underline fix for Safari */
+header h1 {
+	padding:9px 12px 0;
+	font-style:normal;
+	font-weight:700;
+	font-size:2em;
+	line-height:1;
+	letter-spacing:-.075em;
+	color:#4eb8ea;
+	/* border:1px solid #AAA; */ /* temp for screenshots */
+	}
+header h2 {
+	font-family: "runda", helvetica, sans-serif;
+	font-style:normal;
+	font-weight:400;
+	font-size:.75em;
+	color:#333;
+	padding:0px 12px;
+	line-height:1.5;
+	/* border:1px solid #AAA; */ /* temp for screenshots */
+	}
+header section#title_level1 {
+	position:absolute;
+	width:300px; /* wide enough to not force text wrap */
+	height:65px; /* tall enough  for both lines of text */
+	left:0px; /* top left corner positioning */
+	top:0px;
+	/* border:1px solid red; */ /* temp for screenshots */
+	}
+header section#title_level1 a {
+	text-decoration:none;
+	}
+#title_level1 h1 {
+	padding:9px 12px 0;
+	font-style:normal;
+	font-weight:700;
+	font-size:2em;
+	line-height:1;
+	letter-spacing:-.05em;
+	color:#4eb8ea;
+	/* border:1px solid #AAA; */ /* temp for screenshots */
+	}
+#title_level1 h2 {
+	font-family: "runda", helvetica, sans-serif;
+	font-style:normal;
+	font-weight:400;
+	font-size:.7em;
+	color:#333;
+	padding:0px 12px;
+	line-height:1.5;
+	letter-spacing:-.05em;
+	/* border:1px solid #AAA; */ /* temp for screenshots */
+	}
+
+/* FEATURE AREA */	
+section#feature_area {
+	overflow:hidden; /* encloses the floated child elements */
+	margin:16px 0px 0; /* space between header and feature area */
+	padding:0 0 14px; 
+	}
+section#feature_area article {
+	float:left;
+	width:66%;
+	}
+section#feature_area article .inner {
+	overflow:hidden;
+	padding:12px 20px;
+	background:#fff;
+	border-radius:20px 0;
+	box-shadow:0 12px 8px -9px #555;
+	}
+section#feature_area article .float_col {
+	float:left;
+	width:380px;
+	margin-left:25px;
+}
+section#feature_area article p {
+	font-weight:300;
+	font-size:16px;
+	color:#616161;
+	line-height:1.4em;
+	margin:0 0 1em;
+	}
+section#feature_area article a {
+	text-decoration:none;
+	}
+section#feature_area article a:hover {
+	color:919191;
+	}
+section#feature_area article img {
+	float:left;
+	margin:.4em 10px 10px 0;
+	box-shadow:none;
+	}
+section#feature_area article h1 a,
+section#feature_area article h2 a,
+section#feature_area article h3 a {
+	color:#616161;
+	font-weight:400;
+	}
+section#feature_area article h1 a {
+	font-size:1.2em;
+	}
+section#feature_area article h3 {
+	font-style:normal;
+	font-weight:400;
+	font-size:1.7em;
+	color:#616161;
+	margin:0px 0 10px 0px;
+	}
+section#feature_area article .post h3,
+section#feature_area article#book_description h3 {
+	margin:0;
+	font-size:1.6em;
+}
+section#feature_area article h4 {
+	font-style:normal;
+	font-weight:400;
+	font-size:1.2em;
+	color:#616161;
+	letter-spacing:-.05em;
+	}
+section#feature_area article h5 {
+	font-family: "runda", helvetica, sans-serif;
+	font-style:normal;
+	font-weight:700;
+	font-size:1.2em;
+	color:#555;
+	margin:0px 0 12px 0px;
+	letter-spacing:-.05em;
+	}
+section#feature_area article a[href="#"] { /* back to top anchor links */
+	font-family:"myriad-pro", helvetica, sans-serif;
+	font-size:.9em;
+	display:block;
+	}
+section#feature_area #amazon_book_listing a[href="#"] { /* back to top anchor links Bookshelf page */
+	margin:0 0 0 14px;
+	text-decoration:none;
+	color:#4eb8ea;
+	}	
+section#feature_area #amazon_book_listing a[href="#"]:hover { /* back to top anchor links Bookshelef page */
+	color:#aaa;
+}
+#feature_area ol.toc  {
+	font-size:.9em;
+	}
+#feature_area ol.toc li {
+	font-weight:600;
+	font-size:16px;
+	line-height:1.25em;
+	color:#616161;
+	margin:-.5em 0 0 0;
+	text-align:left;
+	list-style-type:none;
+	margin:0;
+	}
+#feature_area ol.toc li li {
+	font-weight:300;
+	margin:0 0 0 20px;
+	}
+#feature_area ol.toc li li li {
+	margin:0 0 0 30px;
+	}
+section#feature_area .link_listing h4 { /* e.g. download & resources page links */
+	color:#616161;
+	font-size:1.2em;	
+}
+section#feature_area .link_listing li { /* e.g. download & resources page links */
+	margin:0 15px .5em 20px;
+}
+section#feature_area .link_listing a { /* e.g. download & resources page links */
+	color:#616161;
+}
+section#feature_area a { /* all links in content area */
+	color:#4eb8ea;
+}
+section#feature_area a:hover { /* all links in content area */
+	color:#919191;
+}
+section#feature_area code {
+	font-size:.9em;	
+	color:#960;
+	}
+section#feature_area pre code {
+	font-size:13px;	
+	background-color:#FFC;
+	}
+section#feature_area article a code  { /* code within a link */
+	color:#4eb8ea;
+	}
+section#feature_area article a:hover code  { /* code within a link */
+	color:#aaa;
+	}
+section#feature_area article#book_description img {
+	float:left;
+}
+section#feature_area article#book_description ul {
+	width:350px;
+	font-style: normal;
+	font-weight:300;
+	font-size:16px;
+	line-height:1.25em;
+	color:#616161;
+	margin:0 0 0 20px;
+	}
+section#feature_area article#book_description img {
+	margin:.35em 10px 0 0;
+	border-top:1px solid #FFF;
+	float:left;
+	box-shadow: 0 12px 8px -7px #555;
+	}
+section#feature_area article#blog_leadoff p:first-of-type:first-letter {
+	font-family: "runda", helvetica, sans-serif;
+	font-style: normal;
+	font-weight:700;
+    font-size:4.5em;  
+    float:left;  
+    margin:.14em .1em 0 0;  
+    line-height:0.6;
+	text-shadow:1px 3px 3px #ccc;
+	color:#616161;
+	}
+section#feature_area article#blog_leadoff p:first-of-type:first-line {  
+	font-variant:small-caps;
+	font-size:1.2em;
+	}
+
+section#feature_area article#blog_leadoff p {
+	line-height:1.6em;
+	text-align:justify;
+	}
+/* THE BLOG INDEX and POST PAGES*/
+section#feature_area .blog .hfeed.listing {
+	font-style:normal;
+	font-weight:300;
+	margin:0;
+	border-bottom:2px solid #EEE;
+}
+section#feature_area .blog .hentry h2 {
+	font-size:1.4em;
+	font-weight:300;
+	margin:0;
+}
+section#feature_area .blog li {
+	list-style-type:none;
+	font-style:normal;
+	font-weight:300;
+	font-size:.95em;
+	line-height:1.4em;
+}
+section#feature_area .date {
+	color:#F58C21;
+	margin:0 0 5px 0;
+	font-size:.9em;
+}
+section#feature_area .blog div.paging {
+	font-style:normal;
+	font-weight:300;
+	font-size:.85em;	
+	margin:4px 0 0 0px;
+}
+
+/* Individual blog posts */
+
+section#feature_area .blog .post h1 {margin:.75em 0 0 0; font-size:1.4em;}
+section#feature_area .blog .post h2 {font-size:1.1em;}
+
+section#feature_area .blog .post h4 {
+	margin:.75em 0 0 0;
+	}
+section#feature_area .blog .post figure {margin:0 0 .75em; overflow:hidden;}
+section#feature_area .blog .post figcaption {clear:both; font-style:italic; font-size:.9em;}
+section#feature_area .blog .post pre {
+		padding:0 10px 16px;
+		background:#FFC;
+		border-radius:5px;
+		overflow-x:scroll
+	}
+section#feature_area .blog .meta { /* categories and tags area */
+	margin:0 0 0 20px;
+	}
+section#feature_area .blog .meta h3 { /* categories and tags area */
+	margin:.4em 0 0;
+	font-size:1.3em;
+	}
+section#feature_area .blog .meta li {
+	list-style-type:none;
+	margin:0 0 0 .3em;
+}
+/* section#feature_area form  {
+	border:none;
+	margin:20px 0 0 20px;
+	width:480px;
+}
+section#feature_area form fieldset  {
+	border:none;
+}
+section#feature_area form legend  {
+	font-size:1.3em;
+	font-weight:bold;
+	margin:0 0 10px;
+}
+section#feature_area form div  {
+	overflow:hidden;
+	margin:16px 0 0 0;
+	padding:3px 0;
+}
+section#feature_area form label  {
+	float:left;
+	width:150px;
+}
+section#feature_area form input {
+	 width:310px;
+}
+section#feature_area form input,
+section#feature_area form textarea  {
+	font-size:1em;
+	padding:.2em;
+	border-radius:6px;
+}
+section#feature_area form input[type=submit] {
+	float:right;
+} */
+
+/* SEARCH RESULTS */
+#feature_area #search_results form {
+	border-top:1px solid #EEE;
+	border-bottom:3px solid #EEE;
+	overflow:hidden;
+}
+#feature_area #search_results form input[type=submit] {
+	margin:10px 30px 10px 0;
+	width:50px;
+}
+#feature_area #search_results p {
+	margin:10px 0 0 0;
+}
+#feature_area #search_results ul {
+	margin:10px 0 0 0;
+}
+#feature_area #search_results ul h2 {
+	font-size:1em;
+}
+#feature_area #search_results ul p {
+	margin-top:0
+}
+
+#feature_area #search_results li {
+	list-style-type:none;
+	margin:.75em 0
+}
+#feature_area #search_results a {
+	margin:10px 0 0 0;
+}
+
+/* THE SIDEBAR COLUMN */	
+section#feature_area aside {
+	width:34%;
+	float:right;
+	overflow:hidden;
+	}
+section#feature_area section.alt_sidebar article {
+	padding:5px 16px;
+	width:auto;
+}
+section#feature_area section.alt_sidebar p {
+	font-size:.85em;
+}
+/* see form css for form element */
+section#feature_area aside > section {
+	width:20em;
+	float:right;
+	margin: 0 0 15px 10px; /* space above and below */	
+	padding:.6em 0em .75em; /* padding above and below content */		
+	background:#fff;
+	border-radius:10px 0 10px 0;
+	box-shadow: 0 12px 8px -9px #555;
+	clear:right;
+	}
+section#feature_area aside > section article {
+	width:auto;
+	margin: 0 14px; /* space above and below */	
+	background:#fff;
+	}
+
+#feature_area nav h3 {
+	padding:0 14px .3em; /* horizontal space for title */
+	font-weight:500;	
+	font-size:1.2em;
+	text-align:left;
+	color:#aaa;
+	}
+#feature_area nav ul {
+	margin:.2em 20px 0 10px;
+	}
+#feature_area nav li {
+	padding:0 0 .7em 2em;
+	line-height:1.3;
+	position:relative; /* positioning context for bullets */
+	list-style-type:none;
+	font-family: "runda", helvetica, sans-serif;
+	}
+#feature_area nav li:before { /* custom list bullets */
+	content:""; 	/* empty string for unneeded content */
+	position:absolute; /* relative to list items */
+	height:10px; /* size bullet */
+	width:10px;
+	left:12px; /* position bullet */
+	top:4px;
+	border-radius:5px 0 5px 0; /* the bullet shape */
+	background-color:#d6e636; /* bullet color */
+	box-shadow:1px 1px 2px #888;
+	}
+#feature_area nav li a {
+	display:block; /* link becomes full-width */
+	text-decoration:none; /* remove default underline */
+	font-size:.9em;
+	color:#616161;
+	}
+#feature_area nav li a:hover {
+	color:#aaa;
+	}
+section#feature_area nav.blog_cats li {
+	float:none;
+}
+section#feature_area nav.blog_cats li:before {
+	content="";
+}	
+/* BOOK AREA */
+section#book_area	{
+	clear:both;
+	background:#fff;
+	border-radius:20px 0px 20px 0px;
+	/* border:1px solid #f58c21; */
+	margin:8px 0 16px; /* separation from feature area and footer */
+	overflow:hidden; /* encloses floated article elements */
+	box-shadow: 0 12px 8px -9px #555;
+		}	
+#book_area  article { /* four columns for the books */
+	float:left;
+	width:25%;
+	padding:10px 0;
+	background:none;
+	}
+#book_area article .inner { /* wrapper around books */
+	position:relative; /* positioning context for popups */
+	width:140px; 
+	margin:0 auto;
+	}
+#book_area  .inner h3 { /* rotated type */
+	position:absolute;
+	width:160px;
+	left:112%; /* positions type on right side of book */
+	bottom:5px;
+	-webkit-transform:rotate(-90deg);
+	-webkit-transform-origin:left bottom;
+	   -moz-transform:rotate(-90deg);
+	   -moz-transform-origin:left bottom; /* turns the type - needs VSPs */
+		-ms-transform:rotate(-90deg);
+	   	-ms-transform-origin:left bottom; /* turns the type - needs VSPs */
+		    transform:rotate(-90deg); /* sets rotation point at start of type */
+		    transform-origin:left bottom;
+	color:#ccc;
+	font-size:1.4em;
+	font-family: "runda", helvetica, sans-serif;
+	font-style:normal;
+	font-weight:900;
+	text-align:left;
+	}
+#book_area article.right:last-child h3 {
+	left:85%; /* different offset for narrower 4th book cover */
+	}
+#book_area article img {
+	box-shadow: 0 12px 8px -9px #555; /* shadow under book */
+	}
+
+/* start of the pop-ups */
+#book_area article aside {
+	display:none; /* hides popups */
+	position:absolute; /* relative to images */
+	z-index:2;
+	width:200px; /* width of popup */
+	background:#fff;
+	padding:10px 2px 5px; /* space around popup content */
+	border:2px solid #f58c21;
+	border-radius:10px 0px 10px 0px;
+	box-shadow:4px 4px 16px #555; 
+	color:#555;
+	font-family: "myriad-pro", helvetica, sans-serif;
+	font-size:.8em;
+	line-height:1.5em;
+	}
+#book_area article:hover aside {
+	display:block; /* shows popup */
+	}
+#book_area article aside li {
+	padding:.25em 0 .75em 1em;
+	list-style-type:none;
+	line-height:1.2em;
+	}
+#book_area article aside li a {
+	text-decoration:none;
+	font-size:1.2em;
+	color:#616161;
+	}
+#book_area article aside li a:hover {
+	color:#333;
+	}
+#book_area article.left aside {
+	left:84%; top:14px; /* positions popup on right side of image */
+	}
+#book_area article.right aside {
+	right:84%; top:14px;	/* positions popup on left side of image */
+	}
+#book_area article aside:after { /* red triangle box*/
+	content:""; /* some content required - using empty text string */
+	position:absolute; /* relative to popup */
+	top:33px;
+	border:12px solid;
+	height:0px; width:0px; /* collapses box to create triangle */
+	}	
+#book_area article.left aside:after {
+	right:100%;
+	border-color:transparent #f58c21 transparent transparent; 
+	}
+#book_area article.right aside:after {
+	left:100%;
+	border-color:transparent transparent transparent #f58c21;
+	}
+#book_area article aside:before { /* red triangle box*/
+	content:""; /* some content required - using empty text string */
+	position:absolute; /* relative to popup */
+	border:8px solid;
+	height:0px; width:0px; /* collapses box to create triangle */
+	z-index:100;
+	top:37px;
+	}
+#book_area article.left aside:before {
+	right:100%; 
+	border-color:transparent white transparent transparent; 
+	}
+#book_area article.right aside:before {
+	left:100%;
+	border-color:transparent transparent transparent white;
+	}
+	/* resources section links */
+#feature_area .link_list a {	
+    text-decoration:underline;
+	}
+#feature_area .link_list a:hover{	
+    text-decoration:none;
+	}
+/* FOOTER */
+footer {
+	padding:.8em 0 1em 0; /* space above and below content */
+	text-align:center; /* centers content */
+	border-radius:10px 0px 10px 0px; 
+	background:#fff;
+	box-shadow:0 12px 8px -9px #555;
+	}
+footer p { /* text line styling */
+	margin:.2em 0 0 0;
+	font-family: "myriad-pro", helvetica, sans-serif;
+	font-weight:400;
+	font-size:.75em;
+	letter-spacing:-.05em;
+	color:#555;
+	}
+footer p a { /* link in text line */
+	font-family: "myriad-pro", helvetica, sans-serif;
+	font-style:italic;
+	font-weight:700;
+	font-size:1em;
+	color:#4eb8ea;
+	text-decoration:none;
+	}
+footer p a:hover {
+	color:#777;
+	}
+footer ul { /* list of links */
+	display:inline-block; /* shrink-wraps list */
+	margin:4px 0 0; 
+	}
+footer li {
+	list-style-type:none; /* removes default bullets */
+	float:left; /* makes list horizontal */
+	font-family: "myriad-pro", helvetica, sans-serif;
+	font-weight:400;
+	font-size:.9em;	
+	color:#aaa;
+	}
+footer li + li a {
+	border-left:1px solid #aaa;*/ /* dividers between links */
+	}
+footer li a {
+	text-decoration:none; /* removes default underlining off links */
+	color:#616161;
+	line-height:1em;
+	padding:0 10px; /* space between links */
+	}
+footer a:hover {
+	color:#aaa;
+	}	
+
+section#feature_area #book_links {
+	margin:0 0 0 1em;
+	}	
+section#feature_area #book_links h5 {
+	font-family: "runda", helvetica, sans-serif;
+	font-weight:600;
+	font-size:1em;
+	line-height:1.25em;
+	color:#616161;
+	margin:.75em 0 .2em 0;
+	}
+section#feature_area #book_links h6 {
+	font-weight:700;
+	font-size:.85em;
+	line-height:1em;
+	color:#616161;
+	margin:0 0 .5em 0 ;
+	}
+section#feature_area #book_links a {
+	font-weight:400;
+	font-size:.9em;
+	color:#616161;
+	text-align:left;
+	text-decoration:none;
+	}
+section#feature_area #book_links a:hover {color:#f00;}
+
+/* PORTFOLIO PAGE */
+article.portfolio h1 {
+	font-weight:normal;
+	font-size:28px;
+}
+section#feature_area article.portfolio h1 + p {
+	color:#f58c21;
+}
+article.portfolio h2 {
+	font-weight:normal;
+}
+section#feature_area article.portfolio .thumbnail h3 {
+	font-weight:normal;
+ 	font-size:18px;
+	margin-bottom:0;
+}
+article.portfolio .thumbnail {
+	clear:both;  
+	overflow:hidden;
+	border-bottom:1px solid #ddd;
+	margin-bottom:10px;
+}
+article.portfolio .thumbnail img {
+	cursor:pointer;
+}
+article.portfolio .thumbnail p.description {
+	float:left;
+	width:280px;
+}
+article.portfolio .thumbnail a.link_to_site {
+	display:block;
+	clear:both;
+}
+article.portfolio .pop_up_box {
+	display:none;
+	position:absolute;
+	border:1px solid #069;
+	border-radius:10px;
+	background:#FFF;
+	z-index:20;
+	box-shadow:0 0 20px 16px #777;
+}
+article.portfolio .pop_up_box img {
+	display:block;
+	cursor:pointer;
+}
+/*portfolio sidebar */
+section.portfolio_sidebar .inner {
+	padding:12px 20px;
+	font-weight:300;
+}
+section.portfolio_sidebar .inner h4 {
+	font-size:18px;
+	font-weight:normal;
+}
+section.portfolio_sidebar .inner p {
+	margin:0 0 .75em;
+	color:#999;
+	font-size:16px;
+}
+	
+/* RESOURCES TABLES */
+.resource_table {
+	margin:20px auto;
+	border-collapse:collapse;
+	font:12px "myriad-pro", helvetica, sans-serif;
+	font-weight:300;
+	width:580px;
+	}
+.resource_table caption {
+	box-sizing:border-box;
+	position:relative; 
+	width:100%; 
+	left:0%;
+	margin:0 0 2px 0;
+	font-size:20px;
+	font-weight:600;
+	color:#666;
+	text-align:left;
+	}
+.resource_table th {
+	font-weight:600;
+	text-align:center;
+	background:#d9ebf4;
+	padding:.25em;
+	border-left:2px solid #fff;
+	}
+.resource_table td:first-child, .resource_table th:first-child {
+	border-left:0;
+	}
+.resource_table td {
+	font-family:"myriad-pro", helvetica, sans-serif;
+	padding:.2em .5em;
+	color:#333;
+	border-left:1px solid #ccb;
+	border-bottom:1px solid #ccb;
+	}
+.resource_table td.ital, .resource_table td span {
+	font-weight:300;
+	}
+.resource_table td a {
+	color:inherit;
+	text-decoration:none;
+	}
+.resource_table td a:hover {color:#f00;}
+.resource_table td.html5::after {
+	content:"HTML\0000a05";
+	font-family:helvetica, sans-serif;
+	font-weight:bold;
+	font-size:.65em;
+	color:#f00;
+	}
+.resource_table tr:last-child td {
+	border-bottom:none;	
+	border-left:none;
+	}
+.resource_table tr:last-child td a {
+	font-size:.9em;
+	color:#666;
+	}
+.resource_table td span {
+	display:block; /*stacks multiple values within a td*/
+	}
+/* bookshelf styles */
+/* bookshelf listing */
+#amazon_book_listing #wdgt_ft { /*removes little AZ footer off each set of books on Bookshelf page */
+	display:none;
+}
+#amazon_book_listing .top_link { /* back to top link */
+	color:#616161;
+	text-decoration:underline;
+	font-size:.9em;	
+}
+#amazon_book_listing .top_link:hover { /* back to top link */
+	text-decoration:none;	
+}
+#amazon_book_listing br {
+	height:none; /* editor add unwanted br's when there are line breaks in code in text editor */
+}
+#amazon_book_listing .wdgt_tl_pad {
+	height:100px;
+}
+
+/* a bunch of overrides for the Amazon styles - images and text are too small by default */
+#amazon_book_listing .wdgt_tl a {
+	font-size:1.5em;
+}
+#amazon_book_listing .wdgt_tl img { /* enlarges the book image */
+	height:98px;
+	width:80px;
+}
+#amazon_book_listing div.asin_img { /* img overlay that indents the text off the enlarged book */
+	width:85px;
+	padding-bottom:60px;
+}
+#amazon_book_listing .asin_cmnt { 
+	font-size:.8em;
+}
+#amazon_book_listing .asin_cmnt { 
+	clear:none;
+}
+#amazon_book_listing .wdgt_hd { 
+	font-size:1.1em;
+}
+#amazon_book_listing .wdgt_tl_pad { 
+	margin-bottom:20px;
+}
+#amazon_book_listing .wdgt_tl { 
+	padding-bottom:24px;
+}
+/* end of Amazon overrides */
+	
+/* START OF MEDIA QUERIES */
+
+@media only screen and (max-width:1000px) {
+	body { 
+		margin:0 8px 20px; /* add right margin to prevent scroll clipping */
+	}
+	#wrapper {width:98%;} /* layout becomes fluid */
+	header {
+    	height:100px;
+		padding-top:1px; /* prevents menu's top margin collapsing */	 
+	}
+	header nav.menu {
+		 margin-top:70px; /* moves menu down below title & search */
+	}
+	section#feature_area {padding-bottom:0;}
+	section#feature_area article { /* makes blog leadoff full-width */
+		float:none; 
+		width:auto;
+		margin:0 0 15px; /*space under full-width article */
+	}
+	section#feature_area aside { /* makes aside full-width */
+		float:none;
+		width:auto;
+		overflow:hidden;
+	}
+	section#feature_area aside section { /*puts sidebar elements side by side */
+		width:32%;
+		float:left;
+		overflow:hidden;
+	}
+	section#feature_area aside section:not(:first-of-type) {
+		margin-left:15px;
+	}
+	section#feature_area aside form {
+		float:left; /* moves form to left of aside */
+		
+	}
+	section#feature_area aside nav {
+		width:17em; /* decreases width on blog link area */
+		float:left;
+	}
+}	
+
+@media only screen and (max-width:780px) { /* landscape iPhone */
+	header {height:100px;}
+	header nav.menu {width:94%; font-size:.65em;} /* more horiz margin - relatively */
+	section#book_area article { /* the blog post */
+		width:auto; float:none; margin:0; padding:0; /* now each one is full width */
+	}
+	section#feature_area aside section { /* the blog post */
+		margin:10px auto; /* adds top and bottom margins */
+		float:none; /* now sit one above the other */
+		width:auto;
+	} 
+	section#book_area article .inner {width:98%; margin:0 0 0 5px; } /* pic wrapper */
+	#book_area  .inner h3 { /* unrotate the rotated type */
+		-webkit-transform:none;
+		-moz-transform:none;
+		-moz-transform-origin:none;
+		-ms-transform-origin:none;
+		transform:none;
+		position:static;
+	}
+	#book_area article img { /* control the image width */
+		width:40%;
+	}
+	section#book_area {background:#fff; padding: 0 10px 10px; margin:0 0 10px;}
+	#book_area article aside { /* display the popup content next to the image */
+		display:block;
+		position:static;
+		float:right;
+		margin:0; padding:0 0 20px 0;
+		font-size:.8em;
+		border:none;
+		width:55%;
+		box-shadow:none;
+	}
+	#book_area article aside section {
+		margin-left:0;
+	}
+	section#book_area article aside::before, /* hides the triangles on the popups */
+	section#book_area article aside::after {
+		display:none;
+	}
+	footer  li {
+		float:none;
+		font-size:20px;
+		line:height:1.5;
+	}
+	footer li a {
+		text-decoration:underline;
+	}
+	footer li + li a {
+		border:none;
+	}
+}
+@media only screen and (max-width:480px) {
+section#feature_area article#book_description .float_col { /* the book descriptions etc (removes fixed width) */
+		width:auto;
+		float:none;
+		margin-left:10px;
+	}
+	section#feature_area article#book_description img { /* the book descriptions etc (removes fixed width) */
+		width:40%;
+	}
+	section#feature_area article#book_description ul {
+		width:auto;
+	}
+img {max-width:90%;}
+}
+@media only screen and (max-width:320px) { /* portrait iPhone */
+	header {height:90px;} /* reduces height of header */
+	header section#title {top:0px;}
+	header section#title h1 {font-size:1.5em;} /* makes type smaller */
+	header section#title h2 {font-size:.75em;} /* makes type smaller */
+	header form.search {top:6px; right:2px;} /* moves search up */
+	header nav.menu {font-size:.55em; margin-top:57px;} /* scales down and moves menu up */
+	nav.menu ul li a {
+		padding:5px 4px; /* increase links sizes to give better target */
+		margin:0;
+	}
+}
